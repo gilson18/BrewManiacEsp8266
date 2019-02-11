@@ -108,7 +108,7 @@
 #endif
 
 //debug setting
-//#define FakeHeating false
+//#define FakeHeating true
 //#define DEVELOP_SETTING_VALUE false
 
 #define SensorDiscGuardTime 10000
@@ -160,7 +160,7 @@
 
 
 #define FIRMWARE_UPDATE_URL "http://brew.vito.tw/bmeupdate.php?info"
-#define JS_UPDATE_URL  "http://brew.vito.tw/bmejsupdate.php?v="
+#define JS_UPDATE_URL  "http://brew.vito.tw/bmejsupdate.ml.php?v="
 
 // request status report period
 #define DEFAULT_REPORT_PERIOD 6000
@@ -175,7 +175,7 @@
 /*  version information     														  */
 /**************************************************************************************/
 
-#define BME8266_VERSION "0.4.6"
+#define BME8266_VERSION "0.4.7"
 
 #if MaximumNumberOfSensors >  1
 	#if LCD_USE_SSD1306 == true
