@@ -115,7 +115,8 @@ byte btnReadPin(byte pin)
 inline void setHeaterOut(byte v)
 {
 #if HEATER_USE_EXT != true
-	digitalWrite (HeatControlPin, v);
+//	digitalWrite (HeatControlPin, v);
+	digitalWrite (HeatControlPin, (v==LOW)? HIGH:LOW);
 #else
 	pcf8574.write(ExHeatControlPin,v);
 #endif
